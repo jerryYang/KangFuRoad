@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+   
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+       <ImageView
+           android:id="@+id/attach_Image"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/attach_image_button"
+           android:padding="12dp"
+           android:onClick="onClickCamera" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_alignBottom="@id/attach_Image"
+           android:layout_alignTop="@id/attach_Image"
+           android:layout_toRightOf="@id/attach_Image" 
+           android:orientation="vertical">
+
+	       <LinearLayout
+	           android:id="@+id/new_date_container"
+	           android:layout_width="match_parent"
+	           android:layout_height="0dp"
+	           android:layout_marginLeft="5dp"
+	           android:layout_weight="1"
+	           android:gravity="center_vertical"
+	           android:orientation="horizontal">
+	        	<TextView
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	        	    android:textSize="@dimen/font_size_label"
+	        	    android:text="@string/add_new_record_date"/>
+	        	<TextView 
+	        	    android:id="@+id/new_record_date"
+	        	    android:layout_width="match_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:textSize="@dimen/font_size_text_1"
+	        	    android:gravity="right"/>
+	       </LinearLayout>
+	       <LinearLayout
+	           android:layout_width="match_parent"
+	           android:layout_height="0dp"
+	           android:layout_weight="1"
+	           android:layout_marginLeft="5dp"
+	           android:gravity="center_vertical"
+	           android:orientation="horizontal">
+	        	<TextView
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	        	    android:textSize="@dimen/font_size_label"
+	        	    android:text="@string/add_new_record_type"/>
+	        	<TextView 
+	        	    android:id="@+id/new_record_type"
+	        	    android:layout_width="match_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:textSize="@dimen/font_size_text_1"
+	        	    android:gravity="right"/>
+	       </LinearLayout>
+       </LinearLayout>
+    </RelativeLayout> 
+    <TableLayout 
+        android:id="@+id/new_items_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+       <TableRow
+           android:background="@drawable/item_top_corner_n"
+           style="@style/new_record_item">
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/constant_bizhong"
+              android:textSize="@dimen/font_size_label"/>
+	      <TextView android:id="@+id/new_item_bizhong"
+	          android:layout_width="match_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:textSize="@dimen/font_size_text_1"
+	        	    android:gravity="right"/>
+       </TableRow>
+       <TableRow android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/item_centra_n"
+           style="@style/new_record_item">
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/constant_hp"
+              android:textSize="@dimen/font_size_label"/>
+	      <TextView android:id="@+id/new_item_ph"
+	          android:layout_width="match_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:textSize="@dimen/font_size_text_1"
+	        	    android:gravity="right"/>
+       </TableRow>
+       <TableRow android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/item_centra_n"
+           style="@style/new_record_item">
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/constant_danbai"
+              android:textSize="@dimen/font_size_label"/>
+	      <TextView android:id="@+id/new_item_danbai"
+	          android:layout_width="match_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:textSize="@dimen/font_size_text_1"
+	        	    android:gravity="right"/>
+       </TableRow>
+       <TableRow android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/item_centra_n"
+           style="@style/new_record_item">
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/constant_qianxue"
+              android:textSize="@dimen/font_size_label"/>
+	      <TextView android:id="@+id/new_item_qianxue"
+	          android:layout_width="match_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:textSize="@dimen/font_size_text_1"
+	        	    android:gravity="right"/>
+       </TableRow>
+       <TableRow android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/item_centra_n"
+           style="@style/new_record_item">
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/constant_hongxibao"
+              android:textSize="@dimen/font_size_label"/>
+	      <TextView android:id="@+id/new_item_hongxibao"
+	          android:layout_width="match_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:textSize="@dimen/font_size_text_1"
+	        	    android:gravity="right"/>
+       </TableRow>
+    </TableLayout>   
+</LinearLayout>

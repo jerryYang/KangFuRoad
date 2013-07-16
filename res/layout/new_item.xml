@@ -1,0 +1,26 @@
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <EditText
+        android:id="@+id/add_new_item_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_new_item_key_hint">
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/add_new_item_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:hint="@string/add_new_item_value_hint"/>
+
+    <Button
+        android:id="@+id/add_new_item_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_item_submit" 
+        android:onClick="onClickAddItem"/>
+
+</TableRow>
