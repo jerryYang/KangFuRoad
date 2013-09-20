@@ -10,13 +10,6 @@ import com.jerry.KangFuRoad.provider.Contract.TableContract.TableItem;
 import com.jerry.KangFuRoad.provider.model.Table;
 
 public class TableDao extends RecordDbHelper{
-	public static String[] TABLE_ALL_COLUMN = new String[]{
-		TableContract.TableEntry._ID,
-		TableContract.TableEntry.COLUMN_NAME_TABLE,
-		TableContract.TableEntry.COLUMN_NAME_ID,
-		TableContract.TableEntry.COLUMN_NAME_TEXT,
-		TableContract.TableEntry.COLUMN_NAME_DEFAULT_VALUE
-	};
 
 	public TableDao(Context context) {
 		super(context);
@@ -30,7 +23,7 @@ public class TableDao extends RecordDbHelper{
 		table.setTable(tableName);	
 		table.setItems(items);
 		try{
-			cursor = getWritableDatabase().query(TableContract.TableEntry.TABLE_NAME, TABLE_ALL_COLUMN, 
+			cursor = getWritableDatabase().query(TableContract.TableEntry.TABLE_NAME, null, 
 					TableContract.TableEntry.COLUMN_NAME_TABLE + "=?", new String[]{tableName}, null, null, TableContract.TableEntry._ID + " ASC");
 			if(cursor != null){
 				while(cursor.moveToNext()){

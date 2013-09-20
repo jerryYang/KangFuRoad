@@ -37,7 +37,11 @@ public class RecordDbHelper extends SQLiteOpenHelper{
             TableEntry.COLUMN_NAME_TABLE + TEXT_NOT_NULL_TYPE + COMMA_SEP +
             TableEntry.COLUMN_NAME_ID + TEXT_NOT_NULL_TYPE + COMMA_SEP +
             TableEntry.COLUMN_NAME_TEXT + TEXT_NOT_NULL_TYPE + COMMA_SEP + 
-            TableEntry.COLUMN_NAME_DEFAULT_VALUE + TEXT_NOT_NULL_TYPE  +
+            TableEntry.COLUMN_NAME_DEFAULT_VALUE + TEXT_NOT_NULL_TYPE  + COMMA_SEP +
+            TableEntry.COLUMN_NAME_IS_RANGE + TEXT_NOT_NULL_TYPE + COMMA_SEP +
+            TableEntry.COLUMN_NAME_MAX_VALUE + TEXT_NOT_NULL_TYPE + COMMA_SEP +
+            TableEntry.COLUMN_NAME_MIN_VALUE + TEXT_NOT_NULL_TYPE + COMMA_SEP +
+            TableEntry.COLUMN_NAME_UNIT + TEXT_NOT_NULL_TYPE +
             " );";
         
 
@@ -95,5 +99,4 @@ public class RecordDbHelper extends SQLiteOpenHelper{
 			cursor.close();
 		}
 	}
-
 }

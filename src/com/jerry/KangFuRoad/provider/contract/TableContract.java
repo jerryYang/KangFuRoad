@@ -26,7 +26,7 @@ public final class TableContract{
 				true, 5.0, 7.0, ""));
 		items.add(new TableItem(RegularColumns.COLUMN_NAME_HONG_XI_BAO,"ºìÏ¸°û","0 £­ 3",
 				true, 0, 3, ""));
-		items.add(new TableItem(RegularColumns.COLUMN_NAME_QIAN_XUE,"Ç±Ñª","ÒõÐÔ"));
+		items.add(new TableItem(RegularColumns.COLUMN_NAME_QIAN_XUE,"Ç±Ñª","ÒõÐÔ"));		
 		tableMaps.put(RegularColumns.TABLE_NAME, items);
 	}
 	

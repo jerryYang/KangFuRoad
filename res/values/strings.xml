@@ -6,9 +6,9 @@
     <string name="menu_settings">Settings</string>
 
     <string name="new_add_date">修改日期</string>
-      <string name="add_new_item_key_hint">input key</string>
+	<string name="add_new_item_submit">保存</string>
+    <string name="add_new_item_key_hint">input key</string>
      <string name="add_new_item_value_hint">input value</string>
-     <string name="add_new_item_submit">add</string>
      
      <string name="add_new_record_date">日期</string>
      <string name="add_new_record_type">类型</string>
@@ -19,6 +19,5 @@
      <string name="constant_danbai">蛋白</string>
      <string name="constant_qianxue">潜血</string>
      <string name="constant_hongxibao">红细胞</string>
-
      
 </resources>

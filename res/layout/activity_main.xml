@@ -68,87 +68,10 @@
        </LinearLayout>
     </RelativeLayout> 
     
-    
     <ListView 
         android:id="@+id/new_items_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></ListView>
+     
     
-    
-    <TableLayout 
-        android:id="@+id/new_items_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-       <TableRow
-           android:background="@drawable/item_top_corner_n"
-           style="@style/new_record_item">
-          <TextView android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/constant_bizhong"
-              android:textSize="@dimen/font_size_label"/>
-	      <TextView android:id="@+id/new_item_bizhong"
-	          android:layout_width="match_parent"
-	        	    android:layout_height="wrap_content"
-	        	    android:textSize="@dimen/font_size_text_1"
-	        	    android:gravity="right"/>
-       </TableRow>
-       <TableRow android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:background="@drawable/item_centra_n"
-           style="@style/new_record_item">
-          <TextView android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/constant_hp"
-              android:textSize="@dimen/font_size_label"/>
-	      <TextView android:id="@+id/new_item_ph"
-	          android:layout_width="match_parent"
-       	    android:layout_height="wrap_content"
-       	    android:textSize="@dimen/font_size_text_1"
-       	    android:text="etsasdsdff"
-       	    android:gravity="right"/>
-       </TableRow>
-       <TableRow android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:background="@drawable/item_centra_n"
-           style="@style/new_record_item">
-          <TextView android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/constant_danbai"
-              android:textSize="@dimen/font_size_label"/>
-	      <TextView android:id="@+id/new_item_danbai"
-	          android:layout_width="match_parent"
-	        	    android:layout_height="wrap_content"
-	        	    android:textSize="@dimen/font_size_text_1"
-	        	    android:gravity="right"/>
-       </TableRow>
-       <TableRow android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:background="@drawable/item_centra_n"
-           style="@style/new_record_item">
-          <TextView android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/constant_qianxue"
-              android:textSize="@dimen/font_size_label"/>
-	      <TextView android:id="@+id/new_item_qianxue"
-	          android:layout_width="match_parent"
-	        	    android:layout_height="wrap_content"
-	        	    android:textSize="@dimen/font_size_text_1"
-	        	    android:gravity="right"/>
-       </TableRow>
-       <TableRow android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:background="@drawable/item_centra_n"
-           style="@style/new_record_item">
-          <TextView android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/constant_hongxibao"
-              android:textSize="@dimen/font_size_label"/>
-	      <TextView android:id="@+id/new_item_hongxibao"
-	          android:layout_width="match_parent"
-	        	    android:layout_height="wrap_content"
-	        	    android:textSize="@dimen/font_size_text_1"
-	        	    android:gravity="right"/>
-       </TableRow>
-    </TableLayout>   
 </LinearLayout>
