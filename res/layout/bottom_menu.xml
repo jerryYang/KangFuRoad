@@ -1,0 +1,26 @@
+<LinearLayout
+   	 xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@drawable/mmfooter_bg">
+     <TextView 
+         android:layout_weight="1"
+         style="@style/bottom_menu_text_size"
+         android:text="@string/menu_item_list"/>
+     <TextView
+         android:layout_weight="1" 
+         style="@style/bottom_menu_text_size"
+         android:text="@string/menu_diary"/>
+     <TextView 
+         android:layout_weight="1"
+         style="@style/bottom_menu_text_size"
+         android:text="@string/menu_about"/>
+     <TextView 
+         android:layout_weight="1"
+         style="@style/bottom_menu_text_size"
+         android:text="@string/menu_calculator"/>
+     <TextView 
+         android:layout_weight="1"
+         style="@style/bottom_menu_text_size"
+         android:text="@string/menu_settings"/>
+ </LinearLayout>

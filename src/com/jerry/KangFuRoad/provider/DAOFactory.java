@@ -21,7 +21,7 @@ public class DAOFactory {
     private DAOFactory() {
     }
 
-    public RegularCheckDao getTeamDAO(Context context) {
+    public RegularCheckDao getRegularDao(Context context) {
         if (cacheDAOInstances) {
             if (cachedRegularDAO == null) {
                 cachedRegularDAO = new RegularCheckDao(getProperDAOContext(context));
@@ -44,7 +44,7 @@ public class DAOFactory {
         }
     }
 
-    public BloodCheckDao getMeetingDAO(Context context) {
+    public BloodCheckDao getBloodDAO(Context context) {
         if (cacheDAOInstances) {
             if (cachedBloodDAO == null) {
                 cachedBloodDAO = new BloodCheckDao(getProperDAOContext(context));

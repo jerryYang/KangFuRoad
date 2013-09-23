@@ -1,9 +1,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <item
-        android:id="@+id/menu_new_item_save"
+        android:id="@+id/menu_item_list_new_item"
         android:orderInCategory="1"
         android:showAsAction="always"
-        android:title="@string/add_new_item_save"/>
+        android:title="@string/item_list_new_item"/>
 
 </menu>

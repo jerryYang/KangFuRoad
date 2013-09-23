@@ -2,11 +2,23 @@
 <resources>
 
     <string name="app_name">KangFuRoad</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="menu_settings">Settings</string>
-
+	
+    <!-- global bottom menus -->
+    <string name="menu_item_list">检查记录</string>
+    <string name="menu_diary">康复日志</string>
+    <string name="menu_about">关于肾病</string>
+    <string name="menu_calculator">计算器</string>
+    <string name="menu_settings">设置</string>
+    
+    <!-- new item page -->
     <string name="new_add_date">修改日期</string>
-	<string name="add_new_item_submit">保存</string>
+	<string name="add_new_item_save">保存</string>
+	
+	<!-- item list -->
+	<string name="item_list_new_item">添加</string>
+	<string name="item_list_empty">点击按钮\"添加\"纪录</string>
+	
+	
     <string name="add_new_item_key_hint">input key</string>
      <string name="add_new_item_value_hint">input value</string>
      
